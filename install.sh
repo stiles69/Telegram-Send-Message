@@ -26,7 +26,7 @@ set -o nounset                              # Treat unset variables as an error
 #-------------------------------------
 function Main ()
 {
-#	sudo apt-get install python python-pip && sudo pip install telepot
+	sudo apt-get install python python-all-dev python-setuptools python-wheel python-pip && sudo pip install telepot
 	echo "Please enter API token:"
 	read TOKEN
 	echo "Please enter id to send notifications to:"
